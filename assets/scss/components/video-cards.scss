@@ -1,0 +1,36 @@
+//
+// Video Cards
+// _________________________
+.cards-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @media only screen and (max-width: 767px) {
+        grid-template-columns: 1fr;
+    }
+}
+.card-item {
+    background-color: #7159C1;
+
+    > .wrapper > .img {
+        display: block;
+        max-width: 100%;
+    }
+
+    > .info {
+        padding: 20px;
+    }
+    
+    > .info > .title {
+        margin-bottom: 10px;
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    > .info > .text {
+        font-size: 16px;
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+}
