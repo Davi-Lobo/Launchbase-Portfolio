@@ -1,0 +1,17 @@
+{
+  "name": "yarn",
+  "version": "1.0.0",
+  "description": "Portfolio template for NodeJS backend study",
+  "main": "index.js",
+  "author": "Davi Lobo",
+  "license": "MIT",
+
+  "devDependencies": {
+    "gulp-sass": "^3.1.10"
+  },
+
+  "dependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-uglifycss": "^1.1.0"
+  }
+}
