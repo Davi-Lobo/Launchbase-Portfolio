@@ -32,6 +32,11 @@ server.get("/videos", function(req, res) {
     return res.render("videos", { items: videos });
 });
 
+server.get("/video", function(req, res) {
+    const id = req.query.id;
+    res.send(id);
+});
+
 server.listen(5000, function() {
     console.log('Node server is running...')
 });
