@@ -22,6 +22,13 @@
         position: relative;
         width: 90%;
     }
+
+    > .modal > .content > .video {
+        height: 90%;
+        position: absolute;
+        top: 5%;
+        width: 100%;
+    }
 }
 
 .close-button {
