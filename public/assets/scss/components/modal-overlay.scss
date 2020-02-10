@@ -1,0 +1,39 @@
+//
+// Modal
+// _________________________
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+
+    &.actived {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    > .modal {
+        background-color: #FFF;
+        height: 90%;
+        margin: 5vh auto;
+        position: relative;
+        width: 90%;
+    }
+}
+
+.close-button {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+
+    > .button {
+        color: #000;
+        cursor: pointer;
+    }
+}
