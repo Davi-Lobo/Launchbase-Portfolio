@@ -15,7 +15,9 @@ for (let button of modalButtons) {
 
 
 for (let card of cards) {
-    card.addEventListener("click", function() {
+    let cardImg = card.querySelector(".img");
+
+    cardImg.addEventListener("click", function() {
         const videoID = card.getAttribute("id");
         window.location.href = `/video?id=${videoID}`;
     });
