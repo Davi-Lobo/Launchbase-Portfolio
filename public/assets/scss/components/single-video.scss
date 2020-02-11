@@ -1,0 +1,15 @@
+//
+// Single Video
+// _________________________
+.single-video {
+    > .video {
+        height: 600px;
+        width: 100%;
+    }
+
+    @media only screen and (max-width: 767px) {
+        > .video {
+            height: 350px;
+        }
+    }
+}

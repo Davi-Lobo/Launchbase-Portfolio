@@ -1,10 +1,14 @@
 //
 // Video Cards
 // _________________________
-.cards-container {
+.grid-container {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
+
+    &.-oneColumn {
+        grid-template-columns: 1fr;
+    }
 
     @media only screen and (max-width: 767px) {
         grid-template-columns: 1fr;
@@ -12,6 +16,7 @@
 }
 .card-item {
     background-color: #7159C1;
+    cursor: pointer;
 
     > .wrapper > .img {
         display: block;
@@ -20,6 +25,15 @@
 
     > .info {
         padding: 20px;
+        position: relative;
+
+        > .openModal {
+            cursor: pointer;
+            padding: 5px;
+            position: absolute;
+            right: 15px;
+            top: 20px;
+        }
     }
     
     > .info > .title {

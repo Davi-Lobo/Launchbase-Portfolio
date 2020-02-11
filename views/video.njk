@@ -1,0 +1,19 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+<title>{{item.title}}- Davi Lobo</title>
+{% endblock %}
+
+{% block content %}
+
+<main id="main-content" class="_grid">
+    <h1>{{item.title}}</h1>
+    
+    <section class="cards-container _oneColumn">
+        <div class="single-video">
+            <iframe class="video" src="https://www.youtube.com/embed/{{item.id}}" frameborder="0"></iframe>
+        </div>
+    </section>
+</main>
+
+{% endblock %}
